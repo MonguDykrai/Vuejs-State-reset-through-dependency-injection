@@ -29,19 +29,23 @@
 <script>
 import { products } from "./data";
 
+function intialState() {
+  return {
+    products: JSON.parse(JSON.stringify(products)),
+    userInfo: {
+      name: "",
+      age: "",
+      gender: ""
+    }
+  };
+}
+
 export default {
   inject: ["reload"],
   name: "home",
 
   data() {
-    return {
-      products,
-      userInfo: {
-        name: "",
-        age: "",
-        gender: ""
-      }
-    };
+    return intialState();
   },
 
   methods: {

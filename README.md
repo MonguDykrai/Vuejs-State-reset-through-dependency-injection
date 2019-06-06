@@ -90,3 +90,5 @@ export const products = {
 ## 实现效果
 
 ![](./images/inject.gif)
+
+![](./images/inject2.gif)
